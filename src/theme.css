@@ -1,0 +1,135 @@
+/* Keep inherited page colors and native controls in sync with the palette. */
+html, body, #root, .main-shell {
+  background: var(--bg);
+  color: var(--text);
+}
+[data-theme='dark'] {
+  color-scheme: dark;
+  --bg: #1c1b21;
+  --surface: #24232b;
+  --sidebar: #201f27;
+  --text: #eeeaf4;
+  --muted: #b2aabd;
+  --border: #403a4a;
+  --accent: #c3acef;
+  --soft: #383044;
+}
+/* Secondary copy stays readable on both the page and raised surfaces. */
+[data-theme='dark'] .brand span,
+[data-theme='dark'] .search-trigger,
+[data-theme='dark'] .nav-label,
+[data-theme='dark'] .sidebar nav button,
+[data-theme='dark'] .sidebar-bottom-card,
+[data-theme='dark'] .sidebar-bottom-card > div,
+[data-theme='dark'] .sidebar-bottom-card p,
+[data-theme='dark'] .sidebar-bottom-card > span,
+[data-theme='dark'] .sidebar-footer > button:first-child,
+[data-theme='dark'] .breadcrumb,
+[data-theme='dark'] .top-date,
+[data-theme='dark'] .badge,
+[data-theme='dark'] .page-header p,
+[data-theme='dark'] .greeting p,
+[data-theme='dark'] .overview-stats > div > span:first-child,
+[data-theme='dark'] .overview-stats strong small,
+[data-theme='dark'] .stat-note,
+[data-theme='dark'] .dashboard-tabs button,
+[data-theme='dark'] .subtle,
+[data-theme='dark'] .text-link,
+[data-theme='dark'] .card-subtitle,
+[data-theme='dark'] .task-text > span,
+[data-theme='dark'] .done .task-text strong,
+[data-theme='dark'] .priority,
+[data-theme='dark'] .icon,
+[data-theme='dark'] .add-inline,
+[data-theme='dark'] .timer-tabs button,
+[data-theme='dark'] .timer-ring .muted,
+[data-theme='dark'] .session-dots small,
+[data-theme='dark'] .goal-info > span,
+[data-theme='dark'] .habit-label,
+[data-theme='dark'] .habit-title small,
+[data-theme='dark'] .activity-item p,
+[data-theme='dark'] .activity-item small,
+[data-theme='dark'] .bottom-note { color: var(--muted); }
+[data-theme='dark'] h1,
+[data-theme='dark'] .timer-number { color: var(--text); }
+[data-theme='dark'] h1 em,
+[data-theme='dark'] .eyebrow,
+[data-theme='dark'] .next-action,
+[data-theme='dark'] .goal-percent,
+[data-theme='dark'] .timer-number span,
+[data-theme='dark'] .dashboard-tabs .selected,
+[data-theme='dark'] .timer-tabs .active {
+  color: var(--accent);
+}
+[data-theme='dark'] .greeting {
+  background: linear-gradient(120deg, #302938, #292630);
+  border-color: var(--border);
+}
+[data-theme='dark'] .workspace,
+[data-theme='dark'] .sidebar-footer,
+[data-theme='dark'] .task-row,
+[data-theme='dark'] .goal-item,
+[data-theme='dark'] .habit-row,
+[data-theme='dark'] .add-inline,
+[data-theme='dark'] .timer-tabs,
+[data-theme='dark'] .focus-content select,
+[data-theme='dark'] .habit-week button {
+  border-color: var(--border);
+}
+[data-theme='dark'] .sidebar nav button:hover { background: var(--soft); }
+[data-theme='dark'] .sidebar nav button.active {
+  background: #3d334e;
+  color: #d4c0f4;
+}
+[data-theme='dark'] .sidebar nav small {
+  background: var(--soft);
+  color: var(--text);
+}
+[data-theme='dark'] .avatar,
+[data-theme='dark'] .avatar.small {
+  background: var(--soft);
+  color: #d4c0f4;
+}
+[data-theme='dark'] .timer-tabs,
+[data-theme='dark'] .focus-content select,
+[data-theme='dark'] .habit-symbol,
+[data-theme='dark'] .activity-item > div,
+[data-theme='dark'] .goal-icon,
+[data-theme='dark'] .orbit-center {
+  background: var(--soft);
+  color: var(--accent);
+  border-color: var(--border);
+}
+[data-theme='dark'] .timer-tabs .active { background: var(--surface); }
+[data-theme='dark'] .timer-ring {
+  background: conic-gradient(#b6a5cf var(--progress), var(--soft) 0);
+}
+[data-theme='dark'] .progress,
+[data-theme='dark'] .mini-progress,
+[data-theme='dark'] .session-dots > span,
+[data-theme='dark'] .habit-week button,
+[data-theme='dark'] .kanban > section { background: #332e3d; }
+[data-theme='dark'] .session-dots .filled { background: var(--accent); }
+[data-theme='dark'] .habit-week .checked {
+  background: #71608b;
+  border-color: #ad94ce;
+  color: #fff;
+}
+[data-theme='dark'] .check { border-color: #9c8eae; }
+[data-theme='dark'] .done .check { background: #71608b; color: #fff; }
+[data-theme='dark'] .priority.p1 { color: #e6b0a0; }
+[data-theme='dark'] .priority.p2 { color: #d9c180; }
+[data-theme='dark'] .stat-note.green { color: #a9cbb2; }
+[data-theme='dark'] .goal-icon.blue { background: #293446; color: #adc6ea; }
+[data-theme='dark'] .goal-icon.green { background: #283b31; color: #afd0b7; }
+[data-theme='dark'] .cal-event { background: #283b31; color: #afd0b7; }
+[data-theme='dark'] .danger { color: #eda8a8; }
+[data-theme='dark'] .primary kbd { color: #fff; }
+[data-theme='dark'] .orbit-center { box-shadow: 0 0 0 8px #38304455; }
+[data-theme='dark'] .orb-dot { border-color: #302938; }
+[data-theme='dark'] .mission-orbit > span { color: var(--muted); }
+[data-theme='dark'] .recharts-text { fill: var(--muted); }
+input::placeholder, textarea::placeholder { color: var(--muted); opacity: 1; }
+
+[data-theme='dark'] .primary { background: #77639f; border-color: #9380b8; }
+[data-theme='dark'] .primary:hover { background: #68548f; }
